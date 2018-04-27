@@ -1,9 +1,0 @@
-
-There is a strong trend nowadays in scientific computations~-- the size of data to be processed increases faster than available computing resources. Different optimization techniques are used to overcome this problem. For example, a memoization technique, which is as follows~-- a result~$R$ that has been computed once by a function~$F$ with the argument~$A$ is stored in memory (together with $A$). Then on consequent calls of $F$ with~$A$, $R$ is retrieved from memory, hence the actual call to~$F$ is omitted. This optimization turns out to be particularly useful when a result of~$F$ takes a long time to be computed (relatively to a time needed to retrieve $R$ from memory), and $F$ is usually called only with a small subset of arguments. Sometimes this technique is also referred to as a caching.
-
-A target audience for this kind of memoization systems is scientific application developers.
-
-The concept of a numerical database, introduced by Park, Draayer, and Zheng\cite{park90}, describes one of such memoization systems. Its main purpose is to ``store and retrieve valuable intermediate information so costly redundant calculations can be avoided.'' Authors also presented a possible implementation, that is based on a weighted search tree.
-
-The main goal of this thesis is to explore different look-up data structures, especially those supporting a concurrent access, which can be used in place of the weighted search tree and compare their performance. Then, the most promising data structures will be packed in a programming library, written in C++ programming language.
-
